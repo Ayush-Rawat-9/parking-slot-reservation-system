@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Booking Site</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Parking Booking Site</h1>
+    <div style="text-align: center;">
+        <a href="http://localhost:8080/home/add">Add Booking</a>
+    </div>
+    <hr>
+
+    <div class="booking-container">
+        <% parking.forEach(function(ent) { %>
+            <div class="booking-card">
+                <h2>ID: <%= ent.id %></h2>
+                <p>Vehicle Name: <%= ent.vehicle_name %></p>
+                <p>Plate Number: <%= ent.plate_no %></p>
+                <p>Check-in time: <%= ent.in_time %></p>
+                <p>Check-out time: <%= ent.out_time %></p>
+                <button class="delete_button" data-id="<%= ent.id %>">Delete</button>
+            </div>
+        <% }); %> 
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

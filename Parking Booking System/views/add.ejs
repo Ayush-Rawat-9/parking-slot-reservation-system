@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Booking</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Add a Booking</h1>
+    <form action="/home" method="post">
+        <label for="vehicle_name">Vehicle Name : </label>
+        <input type="text" name="vehicle_name"><br>
+        <label for="plate_no">Plate Number : </label>
+        <input type="text" name="plate_no"><br>
+        <label for="in_time">Check in time : </label>
+        <input type="datetime-local" name="in_time"><br>
+        <label for="out_time">Check out time : </label>
+        <input type="datetime-local" name="out_time"><br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
